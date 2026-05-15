@@ -81,7 +81,7 @@
             <div class="container grid about-grid" style="grid-template-columns: 1fr 1fr; align-items: center; gap: 4rem;">
                 <div class="about-images reveal" style="display: flex; gap: 1rem; align-items: center; position: relative;">
                     <img src="images/shop_imag.jpeg" alt="Shop Front" style="width: 55%; border-radius: 1rem; box-shadow: 0 15px 30px rgba(0,0,0,0.1); border: 1px solid var(--glass-border); position: relative; z-index: 2;">
-                    <img src="images/services.jpeg" alt="Services Banner" style="width: 45%; border-radius: 1rem; box-shadow: 0 15px 30px rgba(0,0,0,0.1); border: 1px solid var(--glass-border); transform: translateY(3rem);">
+                    <img src="images/advisor.jpeg" alt="Advocate Advisor Banner" style="width: 45%; border-radius: 1rem; box-shadow: 0 15px 30px rgba(0,0,0,0.1); border: 1px solid var(--glass-border); transform: translateY(3rem);">
                     <div class="bg-glow glow-yellow" style="top: 50%; left: 50%; transform: translate(-50%, -50%);"></div>
                 </div>
                 
@@ -312,13 +312,13 @@
                     <h3 class="form-title text-gradient">Send Inquiry</h3>
                     <form action="#" id="contactForm">
                         <div class="form-group">
-                            <input type="text" class="form-input" placeholder="Your Name" required>
+                            <input type="text" id="waName" class="form-input" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="tel" class="form-input" placeholder="Mobile Number" required>
+                            <input type="tel" id="waNumber" class="form-input" placeholder="Mobile Number" required>
                         </div>
                         <div class="form-group">
-                            <select class="form-input" required>
+                            <select id="waService" class="form-input" required>
                                 <option value="" disabled selected>Select Service</option>
                                 <option>Driving License</option>
                                 <option>Vehicle Insurance</option>
@@ -328,7 +328,7 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-input" rows="4" placeholder="Your Message" required></textarea>
+                            <textarea id="waMessage" class="form-input" rows="4" placeholder="Your Message" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Request</button>
                     </form>

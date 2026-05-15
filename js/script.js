@@ -115,12 +115,28 @@ if(contactForm) {
         const btn = contactForm.querySelector('button[type="submit"]');
         const originalText = btn.innerText;
         
-        btn.innerHTML = "<i class='bx bx-loader-alt bx-spin'></i> Sending...";
+        btn.innerHTML = "<i class='bx bx-loader-alt bx-spin'></i> Connecting to WhatsApp...";
         btn.disabled = true;
         
+        // Fetch values from form
+        const name = document.getElementById('waName').value;
+        const number = document.getElementById('waNumber').value;
+        const service = document.getElementById('waService').value;
+        const message = document.getElementById('waMessage').value;
+        
+        // Format WhatsApp message
+        const waText = `Hello Shambhu Nath Patel,\n\nI have an enquiry from your website:\n*Name:* ${name}\n*Mobile:* ${number}\n*Service:* ${service}\n*Message:* ${message}`;
+        const encodedText = encodeURIComponent(waText);
+        const waNumber = "919644042398"; // Admin's WhatsApp number
+        
+        const waURL = `https://wa.me/${waNumber}?text=${encodedText}`;
+        
         setTimeout(() => {
-            btn.innerHTML = "<i class='bx bx-check-circle'></i> Sent Successfully!";
-            btn.style.background = "#25D366"; // WhatsApp Green for success
+            // Open WhatsApp in new tab
+            window.open(waURL, '_blank');
+            
+            btn.innerHTML = "<i class='bx bxl-whatsapp'></i> Sent to WhatsApp!";
+            btn.style.background = "#25D366"; // WhatsApp Green
             
             contactForm.reset();
             
@@ -130,6 +146,6 @@ if(contactForm) {
                 btn.disabled = false;
             }, 3000);
             
-        }, 1500);
+        }, 800);
     });
 }
