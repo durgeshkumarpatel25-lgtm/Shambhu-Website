@@ -707,8 +707,16 @@ img { max-width: 100%; height: auto; }
 
 /* ================= MEDIA QUERIES ================= */
 @media screen and (max-width: 968px) {
-    .hero-grid, .contact-container {
-        grid-template-columns: 1fr;
+    .hero-grid, .contact-container, .about-grid {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .about-images {
+        flex-direction: column;
+    }
+    .about-images img {
+        width: 80% !important;
+        transform: translateY(0) !important;
     }
     
     .hero {
@@ -737,17 +745,20 @@ img { max-width: 100%; height: auto; }
 @media screen and (max-width: 768px) {
     .nav-menu {
         position: fixed;
-        top: -100%;
-        left: 0;
-        width: 100%;
+        top: 0;
+        right: -100%;
+        width: 75%;
+        height: 100vh;
         background: rgba(255, 255, 255, 0.98);
-        padding: 4rem 0;
-        text-align: center;
+        backdrop-filter: blur(20px);
+        padding: 6rem 2rem;
+        text-align: left;
         transition: 0.4s;
-        border-bottom: 1px solid var(--glass-border);
+        box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+        border-left: 1px solid var(--glass-border);
     }
     
-    .nav-menu.show-menu { top: 0; }
+    .nav-menu.show-menu { right: 0; }
     
     .nav-list {
         flex-direction: column;
