@@ -372,19 +372,8 @@ img {
 
 /* ================= SERVICES SECTION ================= */
 .services {
-    background: linear-gradient(135deg, #0f172a, #1e40af);
     position: relative;
-}
-
-.services .section-title {
-    color: #ffffff;
-    font-weight: 800;
-}
-
-.services .section-subtitle {
-    color: #fcd34d;
-    /* Bright gold for dark bg */
-    font-weight: 700;
+    background: transparent;
 }
 
 .services-grid {
