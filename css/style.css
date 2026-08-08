@@ -4,7 +4,8 @@
 /* ================= VARIABLES ================= */
 :root {
     /* Colors - Elegant Navy/Gold Theme */
-    --bg-dark: #FAFAFA; /* Pearl */
+    --bg-dark: #FAFAFA;
+    /* Pearl */
     --bg-darker: #ffffff;
     --bg-gradient: none;
     --card-bg: rgba(255, 255, 255, 0.9);
@@ -23,8 +24,9 @@
     /* Main text (Navy) */
     --text-gray: #475569;
     /* Sub text */
-    
-    --text-light: #FAFAFA; /* White text for dark backgrounds */
+
+    --text-light: #FAFAFA;
+    /* White text for dark backgrounds */
 
     /* Gradients */
     --accent-gradient: linear-gradient(135deg, #D4AF37, #F59E0B, #D4AF37);
@@ -788,9 +790,11 @@ img {
     0% {
         background-position: 0% 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0% 50%;
     }
