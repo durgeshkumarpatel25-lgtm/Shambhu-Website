@@ -14,8 +14,8 @@
     --secondary-color: #818cf8;
     --tertiary-color: #c084fc;
 
-    --text-white: #f8fafc;
-    --text-gray: #94a3b8;
+    --text-white: #ffffff;
+    --text-gray: #e2e8f0;
     --text-light: #ffffff;
 
     /* Gradients */
@@ -24,7 +24,7 @@
     --card-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.5);
 
     /* Box Styles */
-    --glass-border: rgba(255, 255, 255, 0.1);
+    --glass-border: rgba(255, 255, 255, 0.2);
 
     /* Typography */
     --body-font: 'Plus Jakarta Sans', 'Noto Sans Devanagari', sans-serif;
@@ -857,7 +857,7 @@ img {
 .tab-btn {
     background: var(--card-bg);
     border: 1px solid var(--glass-border);
-    color: var(--text-gray);
+    color: var(--text-white);
     padding: 0.75rem 1.5rem;
     border-radius: 2rem;
     cursor: pointer;
@@ -889,7 +889,8 @@ img {
     align-items: center;
     gap: 0.5rem;
     margin-bottom: 0.5rem;
-    color: var(--text-gray);
+    color: var(--text-white);
+    font-size: 1.05rem;
 }
 .checklist li i {
     color: #25D366;
