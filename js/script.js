@@ -69,7 +69,7 @@ const observer = new IntersectionObserver((entries, observer) => {
             observer.unobserve(entry.target);
             
             // Start counters if the stats section is in view
-            if (entry.target.classList.contains('stat-box') || entry.target.querySelector('.stat-number')) {
+            if (entry.target.classList.contains('stat-item') || entry.target.querySelector('.stat-number')) {
                 startCounters();
             }
         }
@@ -149,3 +149,22 @@ if(contactForm) {
         }, 800);
     });
 }
+
+/* ================= TABS LOGIC ================= */
+const tabBtns = document.querySelectorAll('.tab-btn');
+const tabPanes = document.querySelectorAll('.tab-pane');
+
+tabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        // Remove active class from all buttons and panes
+        tabBtns.forEach(b => b.classList.remove('active'));
+        tabPanes.forEach(p => p.classList.remove('active'));
+        
+        // Add active class to current button
+        btn.classList.add('active');
+        
+        // Add active class to targeted pane
+        const targetId = btn.getAttribute('data-target');
+        document.getElementById(targetId).classList.add('active');
+    });
+});
