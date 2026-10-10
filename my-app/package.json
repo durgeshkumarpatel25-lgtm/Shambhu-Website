@@ -9,6 +9,8 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "framer-motion": "^14.1.0",
+    "lucide-react": "^1.54.0",
     "next": "16.4.0",
     "react": "19.3.0",
     "react-dom": "19.3.0"
@@ -24,6 +26,3 @@
     "typescript": "^5"
   }
 }
-npx create-next-app@latest my-app --typescript --tailwind --eslint --app --src-dir --import-alias "@/*"
-cd my-app
-npm install framer-motion lucide-react
