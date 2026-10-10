@@ -3,28 +3,28 @@
 
 /* ================= VARIABLES ================= */
 :root {
-    /* Colors - Modern Sleek Dark Theme */
-    --bg-dark: #0f172a;
-    --bg-darker: #020617;
+    /* Colors - Premium Light Theme */
+    --bg-dark: #f8fafc;
+    --bg-darker: #ffffff;
     --bg-gradient: none;
-    --card-bg: rgba(30, 41, 59, 0.6);
+    --card-bg: rgba(255, 255, 255, 0.9);
 
-    --primary-color: #38bdf8;
-    --primary-alt: #0ea5e9;
-    --secondary-color: #818cf8;
-    --tertiary-color: #c084fc;
+    --primary-color: #1e3a8a;
+    --primary-alt: #1e40af;
+    --secondary-color: #2563eb;
+    --tertiary-color: #f59e0b;
 
-    --text-white: #ffffff;
-    --text-gray: #e2e8f0;
+    --text-white: #0f172a;
+    --text-gray: #475569;
     --text-light: #ffffff;
 
     /* Gradients */
-    --accent-gradient: linear-gradient(135deg, #38bdf8, #818cf8, #c084fc, #38bdf8);
-    --glow-shadow: 0 8px 30px -5px rgba(56, 189, 248, 0.4);
-    --card-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.5);
+    --accent-gradient: linear-gradient(135deg, #2563eb, #3b82f6, #60a5fa);
+    --glow-shadow: 0 8px 30px -5px rgba(37, 99, 235, 0.4);
+    --card-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.1);
 
     /* Box Styles */
-    --glass-border: rgba(255, 255, 255, 0.2);
+    --glass-border: rgba(0, 0, 0, 0.08);
 
     /* Typography */
     --body-font: 'Plus Jakarta Sans', 'Noto Sans Devanagari', sans-serif;
@@ -177,12 +177,12 @@ img {
 
 .glow-red {
     background: var(--primary-color);
-    box-shadow: 0 0 150px 100px rgba(56, 189, 248, 0.2);
+    box-shadow: 0 0 150px 100px rgba(37, 99, 235, 0.15);
 }
 
 .glow-yellow {
     background: var(--tertiary-color);
-    box-shadow: 0 0 150px 100px rgba(192, 132, 252, 0.2);
+    box-shadow: 0 0 150px 100px rgba(245, 158, 11, 0.15);
 }
 
 /* Buttons */
@@ -271,11 +271,11 @@ img {
 }
 
 .header.scroll-header {
-    background: rgba(15, 23, 42, 0.85);
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
 }
 
 .nav {
@@ -634,7 +634,7 @@ img {
 
 .form-input {
     width: 100%;
-    background: rgba(15, 23, 42, 0.6);
+    background: rgba(255, 255, 255, 0.8);
     border: 1px solid var(--glass-border);
     padding: 1rem 1.5rem;
     border-radius: 0.5rem;
@@ -647,8 +647,8 @@ img {
 .form-input:focus {
     outline: none;
     border-color: var(--primary-color);
-    background: rgba(30, 41, 59, 0.8);
-    box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
+    background: #ffffff;
+    box-shadow: 0 0 15px rgba(37, 99, 235, 0.2);
 }
 
 .form-input::placeholder {
@@ -1025,7 +1025,7 @@ img {
         right: -100%;
         width: 75%;
         height: 100vh;
-        background: rgba(15, 23, 42, 0.98);
+        background: rgba(255, 255, 255, 0.98);
         backdrop-filter: blur(20px);
         padding: 6rem 2rem;
         text-align: left;
